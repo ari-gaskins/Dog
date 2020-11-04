@@ -1,13 +1,15 @@
-class Dog {
-    String name;
+import Dog.Dog;
+
+class DogTest {
     public static void main (String[] args) {
-        //make a Dog object and access it
+        
+       //make a Dog object and access it
         Dog dog1 = new Dog();
         dog1.bark();
         dog1.name = "Bart";
 
         //now make a Dog array 
-        Dog[] myDogs new Dog[3];
+        Dog[] myDogs = new Dog[3];
         //and put some dogs in it
         myDogs[0] = new Dog();
         myDogs[1] = new Dog();
@@ -26,14 +28,10 @@ class Dog {
         int x = 0; 
         while (x < myDogs.length) {
             myDogs[x].bark();
+            myDogs[x].chaseCat();
+            myDogs[x].eat();
+            
             x += 1;
         }
-
-        public void bark() {
-            System.out.println(name + " says Ruff!");
-        }
-
-        //public void chaseCat() {}
-        //public void eat() {}
     }
 }
